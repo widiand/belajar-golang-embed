@@ -21,10 +21,10 @@ func TestString(t *testing.T) {
 }
 
 //go:embed cat.png
-var logo []byte
+var cat []byte
 
 func TestByte(t *testing.T) {
-	err := ioutil.WriteFile("cat_new.png", logo, fs.ModePerm)
+	err := ioutil.WriteFile("cat_new.png", cat, fs.ModePerm)
 	if err != nil {
 		panic(err)
 	}
